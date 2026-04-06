@@ -73,11 +73,10 @@ def insert(item, value):
     return item
 
 def search(item, value):
-    # C. Search for a value [cite: 24]
     if item is None:
-        return False # False if not found [cite: 26]
+        return False 
     if item.center_value == value:
-        return True # True if exists [cite: 26]
+        return True 
     
     if value < item.center_value:
         return search(item.left_node, value)
