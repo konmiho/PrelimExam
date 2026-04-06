@@ -83,14 +83,12 @@ def search(item, value):
     return search(item.right_node, value)
 
 def find_min(item):
-    # D. Find the lowest value: Traverse left until no more exist [cite: 27, 28]
     current = item
     while current.left_node is not None:
         current = current.left_node
     return current.center_value
 
 def find_max(item):
-    # E. Find the highest value: Traverse right until no more exist [cite: 29, 31]
     current = item
     while current.right_node is not None:
         current = current.right_node
